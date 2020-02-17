@@ -22,7 +22,7 @@ locationForm.addEventListener('submit', (e) => {
     secondMessage.textContent = '';
 
     // Get data from the server using fetch()
-    fetch('http://localhost:3000/weather?address=' + location ).then( (response) => {
+    fetch('/weather?address=' + location ).then( (response) => {
     response.json().then((data) => { 
 
         // If response data contains error display error message (set by the server (me))
