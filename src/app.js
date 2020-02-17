@@ -40,7 +40,7 @@ app.get('/about', (req, res) => {
 app.get("/help", (req, res) => {
     res.render('help',{
       title: 'Help',
-      message: 'You need help?',
+      message: 'Dont panic, everything is fine',
       name: 'Mete Guneysel'
     });
 });
