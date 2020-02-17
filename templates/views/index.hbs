@@ -4,7 +4,6 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <link rel="stylesheet" href="/css/styles.css">
-    <script src="/js/app.js"></script>
     <title>Home</title>
     <link rel="icon" href="/img/weather.png">
 </head>
@@ -14,9 +13,19 @@
         {{>header}}
 
         <p>Use this site to get your weather</p>
+
+        <form>
+            <input placeholder="Location">
+            <button>Search</button>
+        </form>
+
+        <p id="firstMessage"></p>
+        <p id="secondMessage"></p>
     </div>
 
     {{>footer}}
+
+        <script src="/js/app.js"></script>
 </body>
 
 </html>
