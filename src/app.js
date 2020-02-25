@@ -51,10 +51,10 @@ app.get("/help", (req, res) => {
     });
 });
 
-// 'Weather form' routeWhat happens when you 
+// 'Weather form' route. Handles the main operation (getting weather data based on input and displaying it on the site)
 app.get("/weather", (req, res) => {
 
-    // If theres no address send Object including error message 
+    // If theres no address, send Object including error message 
     if (!req.query.address) {
         return res.send({
             error: 'You must enter an address'
