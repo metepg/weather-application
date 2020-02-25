@@ -73,7 +73,7 @@ app.get("/weather", (req, res) => {
                 return res.send({ error })
             }
 
-            // If everything went well send Object including the data as separate values
+            // If everything went well, send Object including the data as separate values
             res.send( {
                 forecast: forecastData,
                 location,
